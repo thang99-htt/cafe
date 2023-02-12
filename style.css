@@ -1,0 +1,237 @@
+body {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    background: #f7f5f2;
+}
+
+header {
+    grid-area: header;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    background-image: url('./coffeehouse.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 535px;
+}
+
+/* Topnav */
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;
+    overflow: hidden;
+    padding-left: 5px;
+    background-color: #000;
+}
+
+nav > a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+nav a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+header a img {
+    margin-left: 5px;
+}
+
+/* Top nav search */
+nav .search-container {
+    float: right;
+    padding: 10px;
+}
+
+nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    height: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+nav .search-container a {
+    float: right;
+    padding: 5px 12px;
+    margin-right: 16px;
+    color: #000;
+    background: #ccc;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+nav .search-container a:hover {
+    background: #999;
+}
+
+.content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    font-size: 110px;
+    color: #fff;
+    text-align: center;
+}
+
+.content-left {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+}
+
+.text-left {
+    font-size: 14px;
+    padding: 4px;
+    background: #000;
+    color: #fff;
+}
+
+.content-right {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.text-right {
+    font-size: 14px;
+    padding: 4px;
+    background: #fff;
+    color: #000;
+}
+
+main {
+    grid-area: main;
+    max-width: 700px;
+    margin: 90px auto 40px;
+    
+}
+
+
+footer {
+    grid-area: footer;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    height: 100px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.row {
+    display: flex;
+}
+
+.column-15 {
+    flex: 15%;
+    padding: 10px;
+}
+
+.column-5 {
+    flex: 50%;
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+h3 span {
+    color: #fff;
+    background: #000;
+    padding: 1px 10px;
+}
+
+.content-sec1 {
+    background-color: #f1f1f1;
+    padding: 5px 15px ;
+    border-left: 5px solid #ccc;
+    line-height: 30px;
+    font-style: italic;
+    margin-bottom: 36px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.content-sec2 {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    margin-bottom: 30px;
+}
+
+.content-sec2 .heading-sec2 {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    line-height: 15px;
+    text-align: center;
+}
+
+.heading-sec2 span {
+    margin: 8px 12px;
+}
+
+.heading-sec2 span:first-child {
+    background-color: #6b6969;
+    color: #fff;
+}
+
+.pag-sec2 {
+    padding: 20px 12px;
+}
+
+.pag-sec2 > div {
+    padding-top: 20px;
+}
+
+.pag-sec2 > div p:last-child {
+    color: #858282;
+}
+
+.span-sec3 {
+    color: #fff;
+    background: #000;
+    padding: 2px;
+}
+
+section input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+section button {
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    border: none;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+}

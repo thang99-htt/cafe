@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./test.js"></script>
+</head>
+<body>
+    <header id="logo">
+        <nav class="row">
+            <a class="column-15" href="#">HOME</a>
+            <a class="column-15" href="#">ABOUT</a>
+            <a class="column-15" href="#">MENU</a>
+            <a class="column-15" href="#">WHERE</a>
+            <div class="search-container">
+                <form id="frm1" action="action_page.php" method="get" target="_blank">
+                    <input type="text" id="ip1" name="search" placeholder="Search..">
+                    <a id="btn1" href=""><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+        </nav>
+        <div class="content-center">
+            <p class="text-center">the <br> Cafe</p>
+        </div>
+        <div class="content-left">
+            <p class="text-left">Open from 6am to 5pm</p>
+        </div>
+        <div class="content-right">
+            <p class="text-right">15 Adr street, 5015</p>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h3><span>ABOUT THE CAFE</span></h3>
+            <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+            <div class="content-sec1">
+                <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                <p>Chef, Coffeeist and Owner: Liam Brown</p>
+            </div>
+            <img src="./coffeeshop.jpg" alt="" width="100%">
+            <p><b>Opening hours:</b> everyday from 6am to 5pm.</p>
+            <p><b>Address:</b> 15 Adr street, 5015, NY</p>
+        </section>
+
+        <section>
+            <h3><span>THE MENU</span></h3>
+            <div class="content-sec2">
+                <div class="row heading-sec2">
+                    <span class="column-5">Eat</span>
+                    <span class="column-5">Drink</span>
+                </div>
+                <div class="pag-sec2">
+                    <div>
+                        <p>Bread Basket</p>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div>
+                        <p>Honey Almond Granola with Fruits</p>
+                        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    </div>
+                    <div>
+                        <p>Belgian Waffle</p>
+                        <p>Vanilla flavored batter with malted flour 7.50</p>
+                    </div>
+                    <div>
+                        <p>Scrambled eggs</p>
+                        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    </div>
+                    <div>
+                        <p>Blueberry Pancakes</p>
+                        <p>With syrup, butter and lots of berries 8.50</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./coffeehouse2.jpg" alt="" width="100%">
+        </section>
+
+        <section>
+            <h3><span>WHERE TO FIND US</span></h3>
+            <p>Find us at some address at some place.</p>
+            <img src="./map.jpg" alt="" width="100%">
+            <p><span class="span-sec3">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+            <form action="register.php" onsubmit="return formValidate()" name="regForm" method="post">
+                <input type="text" name="fname" placeholder="Name">
+                <input type="number" name="fnumber" placeholder="How many people">
+                <input type="datetime-local" value="2020-11-16T20:00" name="fdate">
+                <input type="text" id="pwd" name="fmessage" placeholder="Message \ Special requirements" pattern=".{8,}" title="Meassage eight or more character">
+                <button>SEND MESSAGE</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Powered by <a href="#">w3.css</a></p>
+        <a href="#logo"><i class="fas fa-angle-double-up"></i></a>
+    </footer>
+</body>
+</html>
